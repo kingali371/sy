@@ -1,13 +1,13 @@
 {
-  "name": "JMTHON ",
-  "description": "Arabic jmthon Powerful & Safe based on Telethon",
-  "logo": "",
+  "name": "جيبثون العرب",
+  "description": "اللهم صلِ على محمد وآل محمد",
+  "logo": "https://telegra.ph/file/1b4a133e03c9e21d100be.jpg",
   "keywords": [
     "plugin",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/jmthonar/RR77R/",
+  "repository": "https://github.com/jepthoniq/lMl10l/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -60,7 +60,7 @@
     },
     "UPSTREAM_REPO": {
       "description": "رمز السورس لا تغيره ابدا",
-      "value": "jmthonar",
+      "value": "jepthon",
       "required": false
     }
   },
