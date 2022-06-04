@@ -1,7 +1,7 @@
 FROM lMl10l/userbot:slim-buster
 
 #clonning repo 
-RUN git clone https://github.com/jepthonar/jepthon.git /root/jmthon
+RUN git clone https://github.com/jepthoniq/jepthon.git /root/jmthon
 #working directory 
 WORKDIR /root/jepthon
 
