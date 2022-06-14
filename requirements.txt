@@ -1,6 +1,7 @@
 telethon
 setuptools
 wheel
+speechrecognition
 aiofiles
 aiohttp
 akinator.py
