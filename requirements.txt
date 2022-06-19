@@ -74,3 +74,4 @@ wikipedia
 youtube_dl
 youtube-search-python
 yt_dlp
+git+https://github.com/cinemagoer/cinemagoer
