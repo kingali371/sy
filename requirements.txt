@@ -1,6 +1,9 @@
 telethon
 setuptools
 wheel
+bs4
+tgcrypto
+pymongo[srv]
 speechrecognition
 aiofiles
 aiohttp
