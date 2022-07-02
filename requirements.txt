@@ -1,7 +1,6 @@
 telethon
 setuptools
 wheel
-Pyrogram
 bs4
 tgcrypto
 pymongo[srv]
