@@ -1,1 +1,1 @@
-akinator.py
+psycopg2
