@@ -1,4 +1,5 @@
 telethon
+py-tgcalls==0.9.1
 setuptools
 wheel
 bs4
