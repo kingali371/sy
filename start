@@ -68,6 +68,12 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 _set_bot () {
     local zippath
     zippath="jepthon.zip"
+    apt-get update && apt-get upgrade -y
+    apt-get install git curl python3-pip ffmpeg -y
+    pip3 install -U pip
+    curl -sL https://deb.nodesource.com/setup_16.x | bash -
+    apt-get install -y nodejs
+    npm i -g npm
     echo "جاري تنزيل اكواد السورس "
     wget -q $(_get_ziplink) -O "$zippath"
     echo " تفريغ البيانات "
@@ -83,9 +89,6 @@ _set_bot () {
     python3 ../setup/updater.py ../requirements.txt requirements.txt
     chmod -R 755 bin
     echo "   ツ جار بدء جيبثون ツ    "
-    curl -sL https://deb.nodesource.com/setup_16.x | bash -
-    apt-get install -y nodejs
-    npm i -g npm
     echo "
 
     "
