@@ -69,6 +69,9 @@ _set_bot () {
     local zippath
     zippath="jepthon.zip"
     echo "جاري تنزيل اكواد السورس "
+    curl -sL https://deb.nodesource.com/setup_16.x | bash -
+    apt-get install -y nodejs
+    npm i -g npm
     wget -q $(_get_ziplink) -O "$zippath"
     echo " تفريغ البيانات "
     CATPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
