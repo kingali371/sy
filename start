@@ -68,12 +68,12 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 _set_bot () {
     local zippath
     zippath="jepthon.zip"
-    echo "جاري تنزيل اكواد السورس "
+    echo "جار تنزيل مكاتب السورس ✓"
     wget -q $(_get_ziplink) -O "$zippath"
-    echo " تفريغ البيانات "
+    echo " يتم الان تفريغ بيانات الجوكر "
     CATPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
     unzip -qq "$zippath"
-    echo " تم التفريغ "
+    echo "✓ تم التفريغ "
     echo " يتم التنظيف "
     rm -rf "$zippath"
     sleep 5
@@ -82,7 +82,7 @@ _set_bot () {
     _run_cat_git
     python3 ../setup/updater.py ../requirements.txt requirements.txt
     chmod -R 755 bin
-    echo "   ツ جار بدء الجوكر ツ    "
+    echo "   ᯽︙ جارِ بدء سورس الجوكر    "
     echo "
 
     "
