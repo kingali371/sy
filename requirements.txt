@@ -1,5 +1,4 @@
 telethon
-imdb
 aiohttp
 py-tgcalls==0.9.1
 setuptools
