@@ -1,16 +1,9 @@
-FROM lMl10l/userbot:slim-buster
+FROM python:3.8-slim-buster
+WORKDIR /app
 
-#clonning repo 
-RUN git clone https://github.com/jepthoniq/jepthon.git /root/jepthon 
-#working directory 
-WORKDIR /root/jepthon
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
 
-# Install requirements
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
-RUN apt-get install -y nodejs
-RUN npm i -g npm
-RUN pip3 install --no-cache-dir -r requirements.txt
+COPY . .
 
-ENV PATH="/home/userbot/bin:$PATH"
-
-CMD ["python3","-m","jepthon"]
+CMD ["bash","start"]
