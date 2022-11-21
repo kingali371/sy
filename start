@@ -75,7 +75,6 @@ _set_bot () {
     chmod 777 "$VENDOR_DIR/p7zip/bin/7zz"
     PROFILE_PATH="$BUILD_DIR/.profile.d/7zz.sh"
     mkdir -p $(dirname $PROFILE_PATH)
-    python3 setup/updater.py requirements.txt requirements.txt
     local zippath
     zippath="jepthon.zip"
     echo "جار تنزيل مكاتب السورس ✓"
@@ -90,12 +89,9 @@ _set_bot () {
     _run_catpack_git
     cd $CATPATH
     _run_cat_git
-    python3 setup/updater.py ../requirements.txt requirements.txt
+    python3 ../setup/updater.py ../requirements.txt requirements.txt
     chmod -R 755 bin
     echo "   ᯽︙ جارِ بدء سورس الجوكر    "
-    echo "
-
-    "
     python3 -m jepthon
 }
 
