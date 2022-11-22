@@ -66,15 +66,6 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 }
 
 _set_bot () {
-    echo "-----> Installing p7zip"
-    BUILD_DIR=$1
-    mkdir -p "$BUILD_DIR/vendor"
-    VENDOR_DIR="$BUILD_DIR/vendor"
-    curl "https://raw.githubusercontent.com/riganf/heroku-buildpack-p7zip/master/p7zip.tar.gz" -s -o - | tar xzf - -C "$VENDOR_DIR"
-    chmod 777 "$VENDOR_DIR/p7zip"
-    chmod 777 "$VENDOR_DIR/p7zip/bin/7zz"
-    PROFILE_PATH="$BUILD_DIR/.profile.d/7zz.sh"
-    mkdir -p $(dirname $PROFILE_PATH)
     local zippath
     zippath="jepthon.zip"
     echo "جار تنزيل مكاتب السورس ✓"
