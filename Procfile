@@ -1,2 +1,2 @@
 web: bash start
-web: vendor/bin/heroku-php-apache2
+web: vendor/heroku/heroku-buildpack-php/bin/heroku-php-apache2
